@@ -103,7 +103,62 @@
           <h3>Chocolate Cake</h3>
           <p>Rich chocolate layered cake.</p>
           <span class="price">R250</span>
- 
+      </div>
+   <div class="product-card">
+          <img src
+          <h3>Vanilla Cupcake</h3>
+          <p>Soft vanilla cupcake with buttercream.</p>
+          <span class="price">R25</span>span>
+   </div>
+   <div class="product-card">
+           <img src=
+           <h3>Crossinate</h3>
+           <p>Fresh buttery croissant.</p>
+           <span classs="price">R70</span>
+   </div>
+   <div class="product-card">
+            <img src=
+            <h3>Banana Bread</h3>
+            <p>Moist homemade banana bread.</p>
+            <span class="price">R70</span>
+   </div>
+   <div class="product-card">
+            <img src=
+            <h3>cheese cake</h3>
+            <p>Creamy baked cheescake.</p>
+            <span class="price">R300</span>
+   </div>
+   <div class="product-card">
+            <img src=
+            <h3>blueberry</h3>
+            <p>Fresh blueberry muffin.</p>
+            <span class="price">R35</span>
+   </div>
+
+  </section>
+  <footer>
+   <p>Lindiwe's Bakery | 0647899330</p>
+  </footer>
+  <script>
+   const search = document.getElementById("search")
+   const products = document.querySelectorAll(".product-card");
+
+   search.addERventListener("keyup", function() {
+       const value = search.value.toLowerCase();
+       products.forEach(product => {
+           const text = product.textContent.toLowerCase();
+        if(text.includes(value)){
+           product.style.display = "block";
+        } else {
+           product.style.display = "none";
+        }
+    });
+ });
+  </script>
+ </body>
+</html>
+  </script>
+   
  
  
   
