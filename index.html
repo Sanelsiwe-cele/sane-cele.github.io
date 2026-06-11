@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>my website</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Lindiwe's website</title>
+<style>
+ *{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+ }
+ body{
+     background:#fff8f0;
+     color:#333;
+ }
+ header{
+      background:#d2691e;
+      color:white;
+      text-align:center;
+      padding:25px;
+ }
+ header h1{
+      font-size:2.5rem;
+ }
+ .hero{
+    text-align:center;
+    padding:40px 20px;
+ }
+ .hero h2{
+     color:#d2691e;
+     margin-bottom:10px;
+ }
+ .hero p{
+     margin-bottom:20px;
+ }
+ #search{
+     width:300px;
+     max-width:90%;
+     padding:12px;
+     border:1px solid #ccc;
+     border-radius:5px;
+ }
+ .products{
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+     gap:20px;
+     padding:30px;
+ }
+ .product-card{
+     background:white;
+     padding:20px;
+     border-radius:12px;
+     box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+     transition:0.3s;
+ }
+ .product-card:hover{
+     transform:translateY(-5px);
+ }
+ .product-card img{
+     width:100%;
+     height:180px;
+     object-fit:cover;
+     border-radius:10px;
+     margin-bottom:15px;
+ }
+ .product-card h3{
+     color:#d269le;
+     margin-bottom:10px;
+ }
+ .price{
+      display:black;
+      margin-top:10px;
+      font-size:1.2rem;
+      font-weight:bold;
+      color:green;
+ }
+ footer{
+      background:#d2691e;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:20px;
+ }
+
+ </style>
 </head>
-<body>
- <h1>Welcome to my website</h1>
- <p>This is my first website using Github!</p>
-</body>
-</html>
+ <body>
+  <header>
+     <h1>Lindiwe's Backery</h1>
+     <p>Freshly Baked Happiness Every Day</p>
+  </header>
+
+  <section class="hero">
+      <h2>Welcome to Our Bakery</h2>
+      <p>Browse Our delicious baked goods and treats.</p>
+      <input type="text" id="search" placeholder="search products...">
+  </section>
+  <section class="products">
+      <div class="prpoduct-card">
+          <img src="https://images.unsplash.com/photo" alt="Chocolate Cake">
+          <h3>Chocolate Cake</h3>
+          <p>Rich chocolate layered cake.</p>
+          <span class="price">R250</span>
+ 
+ 
+ 
+  
+  
+ 
+  
+  
