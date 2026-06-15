@@ -1,163 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Lindiwe's website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bracelet Boutique</title>
+
 <style>
- *{ 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
- }
- body{
-     background:#fff8f0;
-     color:#333;
- }
- header{
-      background:#d2691e;
-      color:white;
-      text-align:center;
-      padding:25px;
- }
- header h1{
-      font-size:2.5rem;
- }
- .hero{
-    text-align:center;
-    padding:40px 20px;
- }
- .hero h2{
-     color:#d2691e;
-     margin-bottom:10px;
- }
- .hero p{
-     margin-bottom:20px;
- }
- #search{
-     width:300px;
-     max-width:90%;
-     padding:12px;
-     border:1px solid #ccc;
-     border-radius:5px;
- }
- .products{
-     display:grid;
-     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-     gap:20px;
-     padding:30px;
- }
- .product-card{
-     background:white;
-     padding:20px;
-     border-radius:12px;
-     box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
-     transition:0.3s;
- }
- .product-card:hover{
-     transform:translateY(-5px);
- }
- .product-card img{
-     width:100%;
-     height:180px;
-     object-fit:cover;
-     border-radius:10px;
-     margin-bottom:15px;
- }
- .product-card h3{
-     color:#d269le;
-     margin-bottom:10px;
- }
- .price{
-      display:black;
-      margin-top:10px;
-      font-size:1.2rem;
-      font-weight:bold;
-      color:green;
- }
- footer{
-      background:#d2691e;
-      color:white;
-      text-align:center;
-      padding:15px;
-      margin-top:20px;
- }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
- </style>
+body{
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:1000px;
+}
+
+.form-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.form-box h2{
+color:#d63384;
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#d63384;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#b0256d;
+}
+
+.hidden{
+display:none;
+}
+
+.products{
+text-align:center;
+}
+
+.products h1{
+color:white;
+margin-bottom:20px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h3{
+margin-top:10px;
+}
+
+.card p{
+font-weight:bold;
+color:#d63384;
+}
+
+.logout{
+width:150px;
+margin-bottom:20px;
+}
+</style>
 </head>
- <body>
-  <header>
-     <h1>Lindiwe's Bakery</h1>
-     <p>Freshly Baked Happiness Every Day</p>
-  </header>
 
-  <section class="hero">
-      <h2>Welcome to Our Bakery</h2>
-      <p>Browse Our delicious baked goods and treats.</p>
-      <input type="text" id="search" placeholder="search products...">
-  </section>
-  <section class="products">
-      <div class="product-card">
-          <img src="snee.jpg">
-          <h3>20Liter Scones</h3>
-          <p>Rich chocolate layered cake.</p>
-          <span class="price">R800</span>
-      </div>
-   <div class="product-card">
-          <img src="https://i.pinimg.com/736x/f6/dd/b9/f6ddb9102aa058eb878fdf994b237452.jpg">
-          <h3>10Liter Scones</h3>
-          <p>Soft vanilla cupcake with buttercream.</p>
-          <span class="price">R400</span>
-   </div>
-   <div class="product-card">
-           <img src="https://i.pinimg.com/736x/98/e4/b5/98e4b51d9bb3cf2562c2e292ebec627d.jpg">
-           <h3>5Liter Scones</h3>
-           <p>Fresh buttery croissant.</p>
-           <span class="price">R200</span>
-   </div>
-   <div class="product-card">
-            <img src="https://i.pinimg.com/736x/a8/1a/ea/a81aea4ac611e50372a582930083685f.jpg">
-            <h3>Banana Bread</h3>
-            <p>Moist homemade banana bread.</p>
-            <span class="price">R70</span>
-   </div>
-   <div class="product-card">
-            <img src="https://i.pinimg.com/736x/83/25/02/83250237c079b3502020070dcc19ec02.jpg">
-            <h3>chocolate muffin</h3>
-            <p>Creamy baked cheescake.</p>
-            <span class="price">R300</span>
-   </div>
-   <div class="product-card">
-            <img src="https://za.pinterest.com/pin/4602960374936959232/">
-            <h3>Vanila muffins</h3>
-            <p>Fresh blueberry muffin.</p>
-            <span class="price">R35</span>
-   </div>
+<body>
 
-  </section>
-  <footer>
-   <p>Lindiwe's Bakery | 0647899330</p>
-  </footer>
-  <script>
-   const search = document.getElementById("search")
-   const products = document.querySelectorAll(".product-card");
+<div class="container">
 
-   search.addERventListener("keyup", function() {
-       const value = search.value.toLowerCase();
-       products.forEach(product => {
-           const text = product.textContent.toLowerCase();
-        if(text.includes(value)){
-           product.style.display = "block";
-        } else {
-           product.style.display = "none";
-        }
-    });
- });
-  </script>
- </body>
+<div class="form-box" id="loginForm">
+<h2>Bracelet Boutique</h2>
+<h3>Login</h3>
+
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p style="margin-top:15px;">
+Don't have an account?
+<a href="#" onclick="showSignup()">Sign Up</a>
+</p>
+</div>
+
+<div class="form-box hidden" id="signupForm">
+<h2>Create Account</h2>
+
+<input type="text" id="signupName" placeholder="Full Name">
+<input type="email" id="signupEmail" placeholder="Email">
+<input type="password" id="signupPassword" placeholder="Password">
+
+<button onclick="signup()">Sign Up</button>
+
+<p style="margin-top:15px;">
+Already have an account?
+<a href="#" onclick="showLogin()">Login</a>
+</p>
+</div>
+
+<div class="products hidden" id="productsPage">
+<h1>Luxury Bracelet Collection</h1>
+
+<button class="logout" onclick="logout()">Logout</button>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500">
+<h3>Gold Bracelet</h3>
+<p>R450</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=500">
+<h3>Silver Bracelet</h3>
+<p>R350</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?w=500">
+<h3>Beaded Bracelet</h3>
+<p>R200</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588444650700-6bde54c4c1d2?w=500">
+<h3>Diamond Bracelet</h3>
+<p>R1200</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+function showSignup(){
+document.getElementById("loginForm").classList.add("hidden");
+document.getElementById("signupForm").classList.remove("hidden");
+}
+
+function showLogin(){
+document.getElementById("signupForm").classList.add("hidden");
+document.getElementById("loginForm").classList.remove("hidden");
+}
+
+function signup(){
+let name=document.getElementById("signupName").value;
+let email=document.getElementById("signupEmail").value;
+let password=document.getElementById("signupPassword").value;
+
+if(name===""||email===""||password===""){
+alert("Please fill all fields");
+return;
+}
+
+localStorage.setItem("email",email);
+localStorage.setItem("password",password);
+
+alert("Account created successfully!");
+showLogin();
+}
+
+function login(){
+let email=document.getElementById("loginEmail").value;
+let password=document.getElementById("lognPassword").value;
+
+let storedEmail=localStorage.getItem("email");
+let storedPassword=localStorage.getItem("password");
+
+if(email===storedEmail && password===storedPassword){
+document.getElementById("loginForm").classList.add("hidden");
+document.getElementById("productsPage").classList.remove("hidden");
+}else{
+alert("Incorrect email or password");
+}
+}
+
+function logout(){
+document.getElementById("productsPage").classList.add("hidden");
+document.getElementById("loginForm").classList.remove("hidden");
+}
+</script>
+
+</body>
 </html>
-  </script>
    
  
  
